@@ -7,9 +7,13 @@ export default function Home() {
 	return (
 		<>
 			<Portal>
-				<div className={tw`bg-black`}>hoi</div>
+				<div className={tw`bg-black text-white`}>portal element</div>
 			</Portal>
-			{isReady() && <div className={tw`bg-black bg-opacity-25`}>a</div>}
+			{isReady() && (
+				<div className={tw`bg-black bg-opacity-25 text-white`}>
+					this should be translucent, but is not?
+				</div>
+			)}
 		</>
 	)
 }
